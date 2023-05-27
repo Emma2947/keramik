@@ -146,14 +146,21 @@
  width: 100%;
  background-color: #e9d9c3;
  text-align: center;
+ padding-bottom: 10px;
  } 
 
  .udvalg-o {
- color: #ef7b32;
- font-size: 1.5rem;
- margin-bottom: 3%;
- margin-top: 7%;
- margin-bottom: 10px;
+    text-decoration: none;
+    color: #ef7b32;
+    background-color: #f9f3ef;
+    padding: 2px 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+ .no4 a:hover {
+   transform: scale(1.1) !important;
  }
 
  .udvalg-t {
@@ -165,7 +172,7 @@
  font-size: 0.9rem;
  margin-left: 10%;
  margin-right: 10%;
- margin-top: 20%;
+ margin-top: 10%;
  }
 
  .no5 {
@@ -257,12 +264,12 @@
 
  /*-----------------------------------------------------------------------------*/
  /*BREAKPOINT 3*/
- @media screen and (max-width: 1200px) and (min-width: 1026px)
+ @media screen and (min-width: 1026px)
 
  {
 
  .mobile-container {
- max-width: 1200px;
+ min-width: 1026px;
  }     
  
  /*Styling af overskrifter og brødtekst*/
@@ -279,9 +286,10 @@
  font-size: 3rem;
  }
 
- .udvalg-o {
-  font-size: 2rem;
-}
+ .proces p {
+  font-size: 1.2rem;
+ }
+
 
 .mv-tekst {
  margin-left: 10%;
@@ -361,124 +369,73 @@
  margin-right: 30%;
  }
 
+ .mit-varksted {
+  display: grid;
+  grid-template-columns: 40% 30% 30% ;
+  grid-template-rows: 361px 298,5px 393px ;
+  column-gap: 3%;
+  row-gap: 2%;
+  margin-right: 12%;
  }
 
+ .no1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+} 
 
+.no2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+} 
 
- /*-----------------------------------------------------------------------------*/
- /*BREAKPOINT 4*/
- @media screen and (max-width: 1600px) and (min-width: 1201px) 
+.no3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  width: 100%;
+} 
 
-{
+.no4 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+} 
 
- .mobile-container {
- max-width: 1600px;
- }
+.udvalg-o {
+  font-size: 2.2rem;
+  margin-bottom: 3%;
+  margin-top: 7%;
+}
 
- /*Styling af tekst*/
- h1 {
- font-size: 5rem;
- }
- 
- .proces-o {
- font-size: 4rem;
- }
+.udvalg-t {
+  font-size: 1rem;
+  margin: 0 5% 7% 5%;
+}
 
- h2 {
- font-size: 5rem;
- }
+.no5 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 126%;
+  margin-left: -26%;
+} 
 
- .udvalg-o {
- font-size: 4rem;
- }
+.no6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 88%;
+} 
 
- .mv-tekst {
- margin-left: 10%;
- margin-right: 10%;
- margin-top: 20%;
- font-size: 1.5rem;
- }
-
- /* styling af billeder og tekst i grid*/
- .proces-img-vis-venstre {
- display: flex;
- width: 120px;
- height: 120px;
- }
-
- .tekst-img {
- display: flex;
- justify-content: flex-start;
- align-items: center;
- max-width: 70%;
- }
-
- .proces-tekst-venstre {
- text-align: left;
- margin-left: 8%;
- margin-right: 8%;
- }
-
- .proces-img {
- display: none;
- }
-
- .proces-img-vis-hojre {
- display: flex;
- width: 120px;
- height: 120px;
- }
-
- .div-tekst {
- display: flex;
- justify-content: flex-end;
- align-items: center;
- max-width: 70%;
- margin-left: 20%;
- }
-
- .proces-tekst-hojre {
- text-align: left;
- padding-right: 0;
- margin-left: 7%;
- margin-right: 7%;
- }
-
- .proces-video-vis-venstre {
- display: flex;
- width: 60%;
- }
-
- .proces-video-vis-hojre {
- display: flex;
- width: 60%;
- }
-
- .proces-video {
- display: none;
- }
-
- #proces-video2 {
- display: flex;
- margin-top: 50px;
- margin-right: auto;
- margin-left: auto;
- width: 50%;
- }
-
- .proces-tekst-midten{
- margin-left: 38%;
- margin-right: 38%;
- }
-
- }
-
-
- @media screen and (max-width: 2300px) and (min-width: 1601px){
-    .mobile-container {
-      min-width: 1601px;
-      max-width: 2300px;
-      width: 100%;
-    }
-  
  }
