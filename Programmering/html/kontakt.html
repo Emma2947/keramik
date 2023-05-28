@@ -49,13 +49,14 @@
                 </p>
                         
                         <form onsubmit="visBesked()">
-                           
+                            <div class="flex">
+                            <div class="form1">
                             <input type="text" id="name" name="name" placeholder="Navn" required>
                         
                             <input type="email" id="email" name="email" placeholder="E-mail" required>
-                          
+                          </div><div class="form2">
                             <textarea id="message" name="message" placeholder="Besked" required></textarea>
-                          
+                          </div></div>
                             <input type="submit" value="Send" class="label-send">
                           </form>
 

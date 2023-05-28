@@ -442,9 +442,104 @@ textarea {
 }
 
 @media screen and (min-width: 1025px) {
+  .mobile-container {
+    min-width: 1025px;
+  }
   
+  .kontakt-overskrift {
+    font-size: 3.5rem;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .form1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -5%;
+  }
+
+  .form2 {
+    margin-left: 10%;
+  }
+
+  #message {
+    padding-bottom: 21%;
+    padding-right: 20%;
+  }
+
+  .nr4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+
+  #map-section {
+    height: 550px;
+    margin-top: 40px;
+  }
+
+  #map {
+    width: 85%;
+    margin-left: 10%;
+  }
+
+  .section-wrapper {
+    text-align: left;
+  }
+
+  .nr4-overskrift {
+    margin-left: 9.5%;
+    margin-top: 5%;
+    font-size: 3.3rem;
+  }
+
+  .knap {
+    margin-left: 9.5%;
+  }
+
 }
 
+
+@media screen and (min-width: 1200px) {
+  .mobile-container {
+    min-width: 1200px;
+  }
+
+.kontakt-tekst {
+  margin: 0 25%;
+}
+
+#confirmation-message {
+  font-size: 1.2rem;
+}
+
+.markedskalender {
+  margin: 0 50px;
+}
+
+.kalender{
+  width: 90%;
+  margin: auto;
+  margin-left: 7%;
+}
+
+.maned {
+  font-size: 1.7rem;
+}
+
+#popup1 {
+  margin-top: -25%;
+}
+
+#popup2 {
+  margin-top: -25%;
+}
+
+
+
+}
 
 
     /*@media screen and (max-width: 768px) and (min-width:481px)
