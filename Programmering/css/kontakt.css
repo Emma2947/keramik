@@ -150,8 +150,7 @@ text-align: center;
 padding: 20px 20px 150px 20px;
 }
 .kalender{
-width: 110%;
-margin-left: -10px;
+width: 103%;
 }
 
 .markedsoverskrift {
@@ -289,28 +288,164 @@ transform: scale(1.1) !important;
 
 /*----------------------BREAKPOINTS-----------*/
 /*breakpoint 1 */
-@media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (min-width: 481px) {
   .mobile-container {
     min-width: 481px;
-    max-width: 768px;
   }
 
-  .topnav {
-    margin-left: -33px;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .kontakt-tekst {
+    margin: 0% 20%;
+  }
+
+  .markedskalender {
+    padding-bottom: 45%;
+  }
+
+  .markedsoverskrift {
+    font-size: 2.2rem;
+  }
+
+  .markedstekst{
+    margin: 0% 17%;
+  }
+
+  .juni {
+    width: 95%;
+  }
+
+  .kalender a.lordag {
+    width: 15%;
+    height: 100px;
+    margin-top: -58%;
+  }
+  
+  .kalender a.onsdag{
+      width: 15%; 
+      height: 100px;
+  }
+
+  #popup1 {
+    margin-top: -36%;
+    margin-left: 20%;
+  } 
+  
+  #popup2 {
+    margin-top: -30%;
+    margin-left: 25%;
+  } 
+
+
 }
 
 
 
-@media screen and (max-width: 1025px) and (min-width: 769px) {
+@media screen and (min-width: 769px) {
   .mobile-container {
     min-width: 769px;
-    max-width: 1025px;
+}
+
+.kontakt-overskrift {
+  font-size: 3rem;
+}
+
+.kontakt-tekst {
+  font-size: 1.3rem;
+}
+
+input {
+  font-size: 1.3rem;
+}
+
+textarea {
+  font-size: 1.3rem;
+}
+
+.label-send {
+  font-size: 2.2rem;
+}
+
+.markedskalender {
+  padding-bottom: 27%;
+}
+
+.markedsoverskrift {
+  font-size: 3rem;
+}
+
+.markedstekst {
+  font-size: 1.3rem;
+}
+
+.maned {
+  font-size: 1.5rem;
+}
+
+.kalender a.lordag {
+  height: 170px;
+}
+
+.kalender a.onsdag{
+    height: 180px;
+}
+
+#popup1 {
+  margin-left: 23%;
+} 
+
+#popup1 p{
+  font-size: 1.3rem;
+}
+
+#popup2 {
+  margin-top: -35%;
+  margin-left: 26%;
+} 
+
+#popup2 p {
+  font-size: 1.3rem;
+}
+
+#close1 {
+  font-size: 50px;
+}
+
+#close2 {
+  font-size: 50px;
+}
+
+.nr4-overskrift {
+  font-size: 2.5rem;
+}
+.nr4-tekst {
+  font-size: 1.3rem;
+}
+
+.section-wrapper a {
+  font-size: 2.2rem;
+}
+
+#map-section {
+  height: 400px;
+}
+
+#map {
+  width: 60%;
+  margin-left: 20%;
+}
+
+}
+
+@media screen and (min-width: 1025px) {
+  
 }
 
 
-
-}
 
     /*@media screen and (max-width: 768px) and (min-width:481px)
     {.mobile-container {max-width: 768px;}
