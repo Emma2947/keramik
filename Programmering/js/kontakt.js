@@ -28,7 +28,31 @@ function myFunction() {
 
 function visBesked() {
   const besked = document.getElementById('confirmation-message')
+  const tekst = document.getElementById('tekst-message')
   besked.style.display = 'block';
+
+  localStorage.setItem('confirmationMessage', tekst.textContent);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const besked = document.getElementById('confirmation-message');
+  const tekst = document.getElementById('tekst-message')
+  const confirmationMessage = localStorage.getItem('confirmationMessage');
+
+  if (confirmationMessage) {
+
+
+    besked.style.display = 'block';
+    tekst.textContent = confirmationMessage;
+
+    localStorage.removeItem('confirmationMessage');
+  }
+});
+
+var closeBtn = document.getElementById("close");
+  function closePopup() {
+    const popup = document.getElementById('confirmation-message');
+    popup.style.display = "none";
 }
 
 
@@ -50,7 +74,7 @@ function showEvent2() {
 }
   var closeBtn = document.getElementById("close2");
   function closePopup2() {
-    const popup2 =document.getElementById('popup2');
+    const popup2 = document.getElementById('popup2');
     popup2.style.display = "none";
 }
 

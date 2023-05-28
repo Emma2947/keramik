@@ -53,9 +53,10 @@ input {
   font-family: "kozuka-gothic-pro", sans-serif;
 }
 
-#name:focus {
-  border-color: #ef7b32 !important;
+input:focus {
+  outline: 2px solid #ef7b32;
 }
+
 
 textarea {
   background-color: #e9d9c3;
@@ -66,6 +67,10 @@ textarea {
   cursor: pointer;
   margin-top: 20px;
   font-family: "kozuka-gothic-pro", sans-serif;
+}
+
+textarea:focus {
+  outline: 2px solid #ef7b32;
 }
 
 #name{
@@ -113,18 +118,25 @@ textarea {
   font-size: 1.8rem
 }
 
-/*slettes evt---------------------------------------*/
 /*Styling af pop-up confirmation*/
 #confirmation-message {
 display: none;
-position: fixed;
+position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-background-color: #f5efeb;
-padding: 20px;
-border: 1px solid ;
+background-color: #f9f3ef;
+border: 3px solid #f8c576;
+border-radius: 10px;
+padding: 30px 30px;
 text-align: center;
+font-family: "kozuka-gothic-pro", sans-serif;
+}
+
+#close {
+  position: relative;
+  margin-left: 90%;
+  font-size: 30px;
 }
 
 
@@ -277,7 +289,21 @@ transform: scale(1.1) !important;
 
 /*----------------------BREAKPOINTS-----------*/
 /*breakpoint 1 */
-    @media screen and (max-width: 768px) and (min-width:481px)
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .mobile-container {
+    min-width: 481px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 769px) {
+  .mobile-container {
+    min-width: 769px;
+    max-width: 1025px;
+}
+}
+
+    /*@media screen and (max-width: 768px) and (min-width:481px)
     {.mobile-container {max-width: 768px;}
      
     .popup .popuptext 
@@ -297,7 +323,7 @@ transform: scale(1.1) !important;
 
 /*--------------------------------------------*/
 /*breakpoint 2 */
-      @media screen and (max-width: 1025px) and (min-width:769px)
+      /*@media screen and (max-width: 1025px) and (min-width:769px)
       {.mobile-container {max-width: 1025px;}   
          
         .h1 
@@ -312,7 +338,7 @@ transform: scale(1.1) !important;
        .h4
         {font-size: 3rem;} 
 /*Styling af Illustrationer + sektionen*/
-.kontakt
+/*.kontakt
 {
 padding-left: 30%;
 padding-right: 30%;
@@ -337,11 +363,11 @@ border-radius: 10px;
 }
 
 /*breakpoint 3 */
-  @media screen and (max-width: 1200px) and (min-width:1026px)
+ /* @media screen and (max-width: 1200px) and (min-width:1026px)
   {.mobile-container { max-width: 1200px;}
 /*Styling af tekst*/
 
-    .h1 
+   /* .h1 
     {font-size: 4rem;}
 
     .h2
@@ -356,7 +382,7 @@ border-radius: 10px;
 /*Styling af Illustrationer, sektionen*/
 
 
-.kalender
+/*.kalender
 {height: 400px;}
 
 .markedskalender
@@ -384,16 +410,16 @@ border-radius: 10px;
 { font-size: 1.7rem;}
 
 
-}
+}*/
 
 /*breakpoint 4 */
-
+/*
   @media screen and (max-width: 1600px) and (min-width:1201px)
   { .mobile-container{max-width: 1600px;}
 
 
 /*Styling af tekst*/
-.h1 
+/*.h1 
 {font-size: 5rem;}
 
 .h2 
@@ -402,12 +428,12 @@ border-radius: 10px;
 .p 
 {font-size: 3.6rem;} 
 
-.mÃ¥ned {font-size: 1.8rem;} 
+.mÃ¥ned {font-size: 1.8rem;} */
     
 
 /*Styling af Illustrationer, sektionen*/
 
-
+/*
 
 .kontakt-overskrift { 
 text-align: center;
@@ -549,5 +575,5 @@ margin: 0px 15px 10px 15px;
 text-align: left;
 margin: 0% 0%;
 }
-}
+}*/
 /*-----------------------------------------*/

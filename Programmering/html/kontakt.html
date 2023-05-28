@@ -18,14 +18,16 @@
     <div class="mobile-container">
 
         <!--Menu bar-->
-        <nav class="topnav">
+        <nav id="topnav" class="topnav">
             <div class="topindhold">
-               <a href="/programmering/index.html"><img src="/Programmering/img/Kildahls-keramik-logo.svg" alt="Kildahls Keramik Logo" class="logo"></a>
+               <div class="logo-container">
+                <a href="/programmering/index.html"><img src="/Programmering/img/Kildahls-keramik-logo.svg" alt="Kildahls Keramik Logo" class="logo"></a>
+                </div>
                 <ul id="menu">
                     <li><a href="/programmering/html/mit-keramik.html">Mit Keramik</a></li>
                     <li><a href="/programmering/html/proces.html">Proces</a></li>
-                    <li><a href="/programmering/html/om-maria.html">Om Maria</a></li>
-                    <li style="font-weight: 900;"><a href="/programmering/html/kontakt.html">Kontakt</a></li>
+                    <li style="font-weight: 900;"><a href="/programmering/html/om-maria.html">Om Maria</a></li>
+                    <li><a href="/programmering/html/kontakt.html">Kontakt</a></li>
                  </ul>  
     
                  <!--Burgermenu-->
@@ -60,51 +62,19 @@
                           </form>
 
                           <div id="confirmation-message">
-                            Tak for din besked, jeg kontakter dig hurtigst muligt. Jeg skal lige være færdig med at dreje. Knus Maria
-                          </div> 
-                    
-
-                    <!---
-                    <section>
-                    <form id="contactForm" onsubmit="submitForm(event)">
-                     
-                        <label class="label"for="name">Navn:</label>
-                        <input class="input"type="text" name="name" placeholder="Navn" required>
-
-                        <label class="label" for="email">Email:</label>
-                        <input class="input"type="email" name="email" placeholder="Email" required>
-
-                        <label for="message">Besked:</label>
-                        <textarea class="input" name="message" placeholder="Besked" required></textarea>
-
-                        <button class="input"type="submit">Send</button>
-                      </form>
-                      <script src="kontakt.js"></script>
-                    </section>
-
-                      <div id="confirmation-message" style="display: none;">
-                        tak for din besked, jeg kontakter dig hurtigst muligt. Jeg skal lige være færdig med at dreje Knus Maria
-                      </div>    
-                    
-                    -->          
-                     
-
-
-                    
-                <!--(hvor skal beskeden sendes hen -> dette skal programmeres)
-                
-                VIGTIGT: der må ikke komme 404 fejl når man trykker send 
-
-                --> 
-                <!---
-                <div class="popup">
-                    <span class="popuptext">
-                        tak for din besked, jeg kontakter dig hurtigst muligt. 
-                        <br> Jeg skal lige være færdig med at dreje Knus Maria </span>
-                        <a class="knap" href="/Programmering/index.html">Tilbage til forsiden</a>
-                    </div>
-                    -->
+                            <span id="close" onclick="closePopup()">&times;</span>
+                            <p id="tekst-message"> 
+                                Tak for din besked, jeg kontakter dig hurtigst muligt. 
+                                <br>
+                                Jeg skal lige være færdig med at dreje. 
+                                <br>
+                                Knus Maria
+                            </p>
+                        </div> 
             </section>
+
+
+
 
             <section class="markedskalender">
 
@@ -148,10 +118,10 @@
                         </p>
                     </div>
                 </div>                  
-                
             
-
             </section>
+
+
 
             <section class="nr4">
                 
@@ -216,9 +186,9 @@
     
         </footer>
 
-    </div>
+   </div>
 
     <script src="/programmering/js/kontakt.js"></script>
-
+    
 </body>
 </html>
