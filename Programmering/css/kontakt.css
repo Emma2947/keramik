@@ -277,11 +277,10 @@ background-color:#e9d9c3;
 border-radius: 10px;
 padding: 0px 10px 5px 10px;
 font-size: 1.5rem;
-transition: transform 0.3s ease-in-out;
 }
 
 .knap:hover{
-transform: scale(1.1) !important;
+font-size: 1.6rem;
 }
 
 
@@ -370,6 +369,10 @@ textarea {
   font-size: 2.2rem;
 }
 
+.label-send:hover {
+  font-size: 2.3rem;
+}
+
 .markedskalender {
   padding-bottom: 27%;
 }
@@ -428,6 +431,10 @@ textarea {
 
 .section-wrapper a {
   font-size: 2.2rem;
+}
+
+.section-wrapper a:hover {
+  font-size: 2.3rem;
 }
 
 #map-section {
@@ -536,283 +543,4 @@ textarea {
 #popup2 {
   margin-top: -25%;
 }
-
-
-
 }
-
-
-    /*@media screen and (max-width: 768px) and (min-width:481px)
-    {.mobile-container {max-width: 768px;}
-     
-    .popup .popuptext 
-      {width: 200px; }
-
-      .label-send 
-      {padding: 2px 15px 8px 15px;}
-
-      .kalender 
-      {height: 300px;}
-
-      .knap
-      { font-size: 1.7rem;}
-    }
-
-
-
-/*--------------------------------------------*/
-/*breakpoint 2 */
-      /*@media screen and (max-width: 1025px) and (min-width:769px)
-      {.mobile-container {max-width: 1025px;}   
-         
-        .h1 
-        {font-size: 3rem;}
-
-        .h2 
-        {font-size: 3rem;}
-           
-        .p 
-        {font-size: 1.8rem;}
-
-       .h4
-        {font-size: 3rem;} 
-/*Styling af Illustrationer + sektionen*/
-/*.kontakt
-{
-padding-left: 30%;
-padding-right: 30%;
-margin-top: 15%;
-}
-
-.formular-knapper
-{
-padding: 2px 10px;
-font-size: 1.7rem;
-border-radius: 10px;
-}
-.popup .popuptext 
-{width: 300px;}
-
-.kalender
-{height: 400px;}
-
-.knap
-{font-size: 1.7rem;}
-
-}
-
-/*breakpoint 3 */
- /* @media screen and (max-width: 1200px) and (min-width:1026px)
-  {.mobile-container { max-width: 1200px;}
-/*Styling af tekst*/
-
-   /* .h1 
-    {font-size: 4rem;}
-
-    .h2
-    {font-size: 4rem;}
-      
-    .p
-    {font-size: 2rem;}
-
-    .h4
-    {font-size: 3rem;} 
-
-/*Styling af Illustrationer, sektionen*/
-
-
-/*.kalender
-{height: 400px;}
-
-.markedskalender
-{
-padding-left: 30%;
-padding-right: 30%;
-margin-top: 20%;
-margin-bottom: 15%;
-}
-
-.popup .popuptext
-{width: 400px;}
-
-.formular-knapper
-{
-padding: 2px 10px;
-font-size: 2.7rem;
-border-radius: 10px;
-}
-
-.baggrund
-{height: 300px;}
-
-.knap
-{ font-size: 1.7rem;}
-
-
-}*/
-
-/*breakpoint 4 */
-/*
-  @media screen and (max-width: 1600px) and (min-width:1201px)
-  { .mobile-container{max-width: 1600px;}
-
-
-/*Styling af tekst*/
-/*.h1 
-{font-size: 5rem;}
-
-.h2 
-{font-size: 5rem;}
-      
-.p 
-{font-size: 3.6rem;} 
-
-.mÃ¥ned {font-size: 1.8rem;} */
-    
-
-/*Styling af Illustrationer, sektionen*/
-
-/*
-
-.kontakt-overskrift { 
-text-align: center;
-font-size: 4.2rem;
-padding: 50px;
-}
-
-.kontakt-tekst {
-text-align: center;
-margin-left: 60px;
-margin-right: 60px;
-}
-
-.kontakt {
-background-image: url(/Programmering/img/baggrund-illustration.svg);
-background-size: cover;
-}
-.markedskalender
-{
-margin-top: 0%;
-margin-bottom: 15%;
-}
-.markedsoverskrift{
-font-size: 2.4rem;
-}
-.kalender
-{
-align-content: center;
-height: 500px;
-padding-right: 75%;
-}
-
-.baggrund{
-height: 300px;
-margin-top: 20%;
-}
-
-.popup{
-margin: 5%;
-}
-.popup .popuptext 
-{
-width: 500px; 
-}
-
-.knap
-{font-size: 1.7rem;}
-
-.kontakt { 
-text-align: center;
-}
-
-
-.formular-knapper { 
-padding: 2px 10px;
-font-size: 1.7rem;
-border-radius: 10px;
-align-content: first baseline;
-}
-
-.formular-knapper {
-justify-content: center;
-display: flex;
-margin-left: 95px;
-margin-right: 95px;
-margin-top: 20px;
-margin-bottom: 30px;
-}
-
-.input {
-padding: 12px 20px;
-border: none;
-border-radius: 4px;
-margin-top: 20px;
-
-}
-
-.input:hover{
-color:#7f5849; 
-}
-
-.label-name.colum{
-border-radius: 4px;
-width: 400px;
-}
-
-.label-email.colum{
-width: 400px;
-}
-
-.label-message.colum{
-width: 600px;
-}
-
-.label-send{
-padding: 0px 10px 5px 10px;
-font-size: 1.7rem;
-width: 230px;
-margin-top: 20%;
-}
-
-.column{
-width: 50%;
-}
-.section-wrapper{
-display: flex;
-max-width: 1080px;
-margin: auto;
-padding-left: 35%;
-}
-
-.columnto{
-width: 20%;
-}
-.section-wrapperto{
-max-width: 600px;
-margin: auto;
-padding-right: 10%;
-padding-left: 50%;
-margin:5%;
-
-}
-.nr4 {
-padding: 0px 0px 0px 0px;
-text-align:left;
-margin-bottom: 20px;
-}
-.nr4-overskrift {
-font-size: 2.4rem;
-margin-left: 40px;
-margin-right: 20px;
-margin-top: 5px;
-margin-bottom: 20px;
-margin: 0px 15px 10px 15px;
-
-}
-
-.nr4-tekst {
-text-align: left;
-margin: 0% 0%;
-}
-}*/
-/*-----------------------------------------*/

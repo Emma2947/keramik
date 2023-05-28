@@ -145,11 +145,10 @@ h1 {
     padding: 2px 10px;
     font-size: 1.7rem;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
 }
 
- .tekst a:hover {
-   transform: scale(1.1) !important;
+ .om-maria a:hover {
+   font-size: 1.8rem;
  }
 
 
@@ -183,11 +182,10 @@ h1 {
     padding: 2px 10px;
     font-size: 1.7rem;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
 }
 
  .p-tekst a:hover {
-   transform: scale(1.1) !important;
+   font-size: 1.8rem;
  }
 
 
@@ -198,7 +196,6 @@ h1 {
   overflow: hidden;
 }
 
-
 .maria {
   width: 100%;
 }
@@ -208,7 +205,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 145%;
+  width: 175%;
   margin-top: -40px;
 }
 
@@ -269,11 +266,10 @@ h1 {
     padding: 2px 10px;
     font-size: 1.7rem;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
   }
 
  .kontakt a:hover {
-   transform: scale(1.1) !important;
+   font-size: 1.8rem;
  }
 
 
@@ -435,6 +431,10 @@ footer p {
     margin-right: 50px;
   }
 
+  .mit-keramik a:hover {
+    font-size: 2.6rem;
+  }
+
   .billede {
     margin-top: 30px;
   }
@@ -517,6 +517,10 @@ footer p {
     margin-right: 80px;
   }
 
+  .mit-keramik a:hover{
+    font-size: 3.6rem;
+  }
+
   .om-maria img {
     width: 75%;
     margin-top: 50px;
@@ -537,6 +541,10 @@ footer p {
 
 .om-maria a {
   font-size: 2rem;
+}
+
+.om-maria a:hover {
+  font-size: 2.1rem;
 }
 
 .proces {
@@ -567,6 +575,10 @@ footer p {
   font-size: 2rem;
 }
 
+.proces a:hover {
+  font-size: 2.1rem;
+}
+
 .kontakt {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -594,6 +606,10 @@ footer p {
 .kontakt a {
   font-size: 2.2rem;
 }
+.kontakt a:hover {
+  font-size: 2.3rem;
+}
+
 .footer {
   display: flex;
   justify-content: center;
