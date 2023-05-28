@@ -294,13 +294,22 @@ transform: scale(1.1) !important;
     min-width: 481px;
     max-width: 768px;
   }
+
+  .topnav {
+    margin-left: -33px;
+  }
 }
+
+
 
 @media screen and (max-width: 1025px) and (min-width: 769px) {
   .mobile-container {
     min-width: 769px;
     max-width: 1025px;
 }
+
+
+
 }
 
     /*@media screen and (max-width: 768px) and (min-width:481px)
