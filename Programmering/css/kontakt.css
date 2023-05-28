@@ -3,6 +3,7 @@
 .kontakt { 
   text-align: center;
   margin-top: 95px;
+  padding-top: 1px;
 }
 
 .kontakt-overskrift { 
@@ -14,6 +15,8 @@ margin-bottom: 5px;
 .kontakt-tekst {
 text-align: center;
 margin: 0% 10%;
+background-color: #f9f3ef;
+border-radius: 10%;
 }
 
 .kontakt {
@@ -22,7 +25,7 @@ background-size: cover
 }
 /*styling af kontakt formular*/
 
-.formular-knapper { 
+form { 
 text-decoration: none;
 color:#7f5849;
 padding: 2px 10px;
@@ -39,7 +42,7 @@ border-radius: 10px;
    margin-bottom: 30px;
    }
 
-.input {
+input {
   background-color: #e9d9c3;
   color: #ef7b32;
   padding: 12px 20px;
@@ -48,15 +51,24 @@ border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
   font-family: "kozuka-gothic-pro", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
-.input:hover{
- color: #f9f3ef; 
+#name:focus {
+  border-color: #ef7b32 !important;
 }
 
-.label-name{
+textarea {
+  background-color: #e9d9c3;
+  color: #ef7b32;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-family: "kozuka-gothic-pro", sans-serif;
+}
+
+#name{
   color: #7f5849;
   padding: 12px 20px;
   border: none;
@@ -65,7 +77,7 @@ border-radius: 10px;
   width: 230px;
 }
 
-.label-email{
+#email{
   color: #7f5849;
   padding: 12px 20px;
   border: none;
@@ -74,7 +86,7 @@ border-radius: 10px;
   width: 230px;
 }
 
-.label-message{
+#message{
   color: #7f5849;
   padding: 12px 20px;
   border: none;
@@ -94,16 +106,16 @@ border-radius: 10px;
   font-weight: 400;
   font-style: normal;
   width: 230px;
+  margin-bottom: 40px;
 }
 
 .label-send:hover{
-  color: #f9f3ef;
   font-size: 1.8rem
 }
 
 /*slettes evt---------------------------------------*/
 /*Styling af pop-up confirmation*/
-.confirmation-message {
+#confirmation-message {
 display: none;
 position: fixed;
 top: 50%;
@@ -111,18 +123,11 @@ left: 50%;
 transform: translate(-50%, -50%);
 background-color: #f5efeb;
 padding: 20px;
-border: 1px solid #ccc;
+border: 1px solid ;
 text-align: center;
 }
 
-.link a{
-display: none;
-}
 
-hidden a{
-display: none;
-}
-/*-------------------------------*/
 
 /*Styling af markedskalender*/
 
@@ -130,39 +135,79 @@ display: none;
 .markedskalender{
 background-color: #f8c576;
 text-align: center;
-padding: 0px 20px 40px 20px;
-padding-top: 25px;
-padding-bottom: 25px;
+padding: 20px 20px 150px 20px;
 }
 .kalender{
-height:150px
+width: 110%;
+margin-left: -10px;
 }
 
-.popup {
+.markedsoverskrift {
+  font-size: 1.7rem;
+}
+.maned {
+  font-size: 1rem;
+}
+
+.kalender a.lordag{
   position: relative;
-  display: inline-block;
-  cursor: pointer;
+  display: block;
+  margin-top: -62%;
+    margin-left: 65.5%;
+    width: 70px; 
+    height: 70px;
 }
 
-.popup .popuptext {
-  visibility: hidden;
-  width: 200px; 
-  background-color: #e9d9c3;
-  color: #7f5849;
-  text-align: center;
-  border-radius: 4px;
-  padding: 8px;
+.kalender a.onsdag{
+  position: relative;
+  display: block;
+  margin-top: 5%;
+    margin-left: 27.5%;
+    width: 70px; 
+    height: 70px;
+}
+
+#popup1 {
+  display: none;
   position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -100px;
+  padding: 5% 7%;
+  margin-top: -36%;
+  margin-left: 6.5%;
+  background-color: #f9f3ef;
+} 
+
+#popup2 {
+  display: none;
+  position: absolute;
+  padding: 5% 10%;
+  margin-top: -34%;
+  margin-left: 13.5%;
+  background-color: #f9f3ef;
+} 
+
+#close1 {
+  position: absolute;
+  margin-left: 40%;
+  margin-top: -12%;
+  font-size: 40px;
 }
 
-.popup:hover .popuptext {
-  visibility: visible;
+#close1:hover,
+#close1:focus {
+cursor: pointer;
 }
 
+#close2 {
+  position: absolute;
+  margin-left: 38%;
+  margin-top: -15%;
+  font-size: 40px;
+}
+
+#close2:hover,
+#close2:focus {
+cursor: pointer;
+}
 
   /* kontakt */
   #map-section {

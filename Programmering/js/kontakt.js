@@ -24,27 +24,35 @@ function myFunction() {
 
 
 
-//hvad der sker efter send knap
-function submitForm(event) {
-  event.preventDefault(); // Forhindrer formular i at blive indsendt og siden genindlæses
-  
-  // Udfør eventuelle yderligere handlinger eller valideringer her
-  
-  // Send brugeren videre til en ny side
-  window.location.href = "conformation.html";
+//Confirmation besked
+
+function visBesked() {
+  const besked = document.getElementById('confirmation-message')
+  besked.style.display = 'block';
 }
 
 
-function submitForm(event) {
-  event.preventDefault(); // Forhindrer formular i at blive indsendt og siden genindlæses
-  
-  // Udfør eventuelle yderligere handlinger eller valideringer her
-  
-  // Vis linket til den nye side
-  var linkElement = document.getElementById('link');
-  linkElement.classList.remove('hidden');
+// popups
+
+function showEvent1() {
+  const popup1 = document.getElementById('popup1');
+  popup1.style.display = 'block';
+}
+  var closeBtn = document.getElementById("close1");
+  function closePopup1() {
+    const popup1 =document.getElementById('popup1');
+    popup1.style.display = "none";
 }
 
+function showEvent2() {
+  const popup2 = document.getElementById('popup2');
+  popup2.style.display = 'block';
+}
+  var closeBtn = document.getElementById("close2");
+  function closePopup2() {
+    const popup2 =document.getElementById('popup2');
+    popup2.style.display = "none";
+}
 
 
   //Mapbox

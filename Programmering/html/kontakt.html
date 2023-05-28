@@ -47,30 +47,21 @@
                     så tøv ikke med at skriv til mig i kontaktformularen. 
                     Jeg er altid behjælpelig og svarer så hurtigt jeg kan.
                 </p>
-                    <section class="formular-knapper">
-                        <div class="section-wrapper">
-                        <!---
-                    <form action="send_form.php" method="POST">
-                        -->
-                        <form id="contactForm" onsubmit="submitForm(event)">
-                            <!-- Formularfelter -->
-                       <div class="column">
-                        <input id="label-name" class="input" type="text" id="name" name="name" placeholder="Navn"required>
-                      
                         
-                        <input id="label-email" class="input" type="email" id="email" name="email" placeholder="Email"required>
-                      
+                        <form onsubmit="visBesked()">
+                           
+                            <input type="text" id="name" name="name" placeholder="Navn" required>
                         
-                        <textarea id="label-message" class="input" id="message" name="message" placeholder="Besked" required></textarea>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                          
+                            <textarea id="message" name="message" placeholder="Besked" required></textarea>
+                          
+                            <input type="submit" value="Send" class="label-send">
+                          </form>
 
-                        <a href="comfirmation.html" id="link" class="hidden">
-                        <button class="label-send" class="input" type="submit">Send</button></a>
-                    </div>
-                      </form>
-
-                      <script src="kontakt.js"></script>
-                      </div>
-                    </section>
+                          <div id="confirmation-message">
+                            Tak for din besked, jeg kontakter dig hurtigst muligt. Jeg skal lige være færdig med at dreje. Knus Maria
+                          </div> 
                     
 
                     <!---
@@ -99,7 +90,7 @@
                      
 
 
-                    <img class="baggrund"src="img/bagggrund-illustration.svg" alt="Baggrunds Illustrationer" class="Illustrationer">
+                    
                 <!--(hvor skal beskeden sendes hen -> dette skal programmeres)
                 
                 VIGTIGT: der må ikke komme 404 fejl når man trykker send 
@@ -126,28 +117,39 @@
                     Klik og se de kommende markeder nedenfor.
                 </p>
             
-                <h4 class="måned">Juni 2023</h4>
+                <h4 class="maned">Juni 2023</h4>
 
-                <div class="popup">
-                    <img class="kalender"src="/Programmering/img/markedskalender.png" alt="Markedskalender for juni måned">
-                    <span class="popuptext"> <p>
-                        Lørdag d. 3. juni
-                        <br>
-                        Krammermarked på Ingerslevs Boulevard
-                        <br>
-                        Find min stand fra kl. 11:00 - 16:00
-                    </p>
-    
-                    <p>
-                        Onsdag d. 14. juni
-                        <br>
-                        Juni marked på godsbanen
-                        <br>
-                        Jeg er der fra 12:00-15:00
-                    </p> </span>
-                  </div>
+                <div class="kalender">
+                    <img src="/Programmering/img/markedskalender.svg" alt="Markedskalender for juni" class="juni">
+                    <a href="#kalender" onclick="showEvent1()" class="lordag"></a>
+                    <a href="#kalender" onclick="showEvent2()" class="onsdag"></a>
+                </div>
+                <div id="popup1">
+                    <div class="popup-content">
+                        <span id="close1" onclick="closePopup1()">&times;</span>
+                        <p>
+                            Lørdag d. 3. juni
+                            <br> <br>
+                            Krammermarked på Ingerslevs Boulevard
+                            <br><br>
+                            Find min stand fra kl. 11:00 - 16:00
+                        </p>
+                    </div>
+                </div>
+                <div id="popup2">
+                    <div class="popup-content">
+                        <span id="close2" onclick="closePopup2()">&times;</span>
+                        <p>
+                            Onsdag d. 14. juni
+                            <br><br>
+                            Juni marked på godsbanen
+                            <br><br>
+                            Jeg er der fra 12:00-15:00
+                        </p>
+                    </div>
+                </div>                  
                 
-                
+            
 
             </section>
 
