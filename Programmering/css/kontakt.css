@@ -163,24 +163,53 @@ height:150px
   visibility: visible;
 }
 
+
+  /* kontakt */
+  #map-section {
+    position: relative;
+    height: 300px; /* Just an example height, adjust as needed */
+  }
+
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-top: -4px;
+    width: 80%;
+  }
+  .marker {
+    background-image: url('/Programmering/img/placering.gif');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+    .mapboxgl-popup {
+     max-width: 200px;
+    }
+
+    .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    }
+
 .nr4 {
-padding: 30px 20px 30px 20px;
+padding: 50px 20px 30px 20px;
 text-align: center;
 margin-bottom: 30px;
 }
+
 .nr4-overskrift {
-justify-content: center;
-display: flex;
-margin-left: 95px;
-margin-right: 95px;
-margin-top: 20px;
-margin-bottom: 30px;
 margin: 0px 30px 25px 30px;
+font-size: 1.7rem;
 }
 
 .nr4-tekst {
-text-align: center;
-margin: 0% 10%;
+margin: 0% 10% 4% 10%;
 }
 
 /*Styling af knap retur lÃ¦r kunsten..*/
@@ -191,17 +220,14 @@ color: #ef7b32;
 background-color:#e9d9c3;
 border-radius: 10px;
 padding: 0px 10px 5px 10px;
-font-size: 1rem;
+font-size: 1.5rem;
+transition: transform 0.3s ease-in-out;
 }
 
 .knap:hover{
-color: #f9f3ef;
-font-size: 1.8rem
+transform: scale(1.1) !important;
 }
 
-.conformation-tekst{
-font-size: 100px;
-}
 
 
 /*----------------------BREAKPOINTS-----------*/

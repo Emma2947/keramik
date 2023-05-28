@@ -44,8 +44,7 @@
 
 
 
-
-  //Mapbox
+//Mapbox
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZW1tYTI5NDciLCJhIjoiY2xocTY2cndxMDE1cjNmbzh5dmducjdyciJ9.qTGQsI4BH-7Q2AQ1uFuFnA';
 
