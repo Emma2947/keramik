@@ -46,12 +46,13 @@
                     Jeg er altid behjælpelig og svarer så hurtigt jeg kan.
                 </p>
                     <section class="formular-knapper">
+                        <div class="section-wrapper">
                         <!---
                     <form action="send_form.php" method="POST">
                         -->
                         <form id="contactForm" onsubmit="submitForm(event)">
                             <!-- Formularfelter -->
-                       
+                       <div class="column">
                         <input id="label-name" class="input" type="text" id="name" name="name" placeholder="Navn"required>
                       
                         
@@ -62,10 +63,11 @@
 
                         <a href="comfirmation.html" id="link" class="hidden">
                         <button class="label-send" class="input" type="submit">Send</button></a>
-                        
+                    </div>
                       </form>
 
                       <script src="kontakt.js"></script>
+                      </div>
                     </section>
                     
 
@@ -113,7 +115,7 @@
 
             <section class="markedskalender">
 
-                <h2>Markedskalender</h2>
+                <h2 class="markedsoverskrift">Markedskalender</h2>
                 <p>
                     Jeg elsker at tage på markeder og møde nogle af jer. 
                     Her udstiller jeg en masse af de ting jeg producerer og der vil være rig mulighed for købe noget keramik med hjem. 
@@ -122,7 +124,7 @@
                     Klik og se de kommende markeder nedenfor.
                 </p>
             
-                <h4>Juni 2023</h4>
+                <h4 class="måned">Juni 2023</h4>
 
                 <div class="popup">
                     <img class="kalender"src="/Programmering/img/markedskalender.png" alt="Markedskalender for juni måned">
@@ -148,6 +150,7 @@
             </section>
 
             <section class="nr4">
+                 <!----
 
                 <div id='map' style='width: 400px; height: 300px;'></div>
 
@@ -157,8 +160,9 @@
                       container: 'map',
                       style: 'mapbox://styles/mapbox/streets-v11'
                     });
-                  </script>
-
+                  </script> 
+                 ------>
+                  <div class="section-wrapperto" class="columnto">
                 <h2 class="nr4-overskrift">Besøg Nr4 i Aarhus</h2>
                 <p class="nr4-tekst">
                     På Jægergårdsgade 51, 8000 Aarhus C, udstiller jeg mit keramik.
@@ -179,6 +183,7 @@
                     Se på kortet hvor i Aarhus du kan finde butikken.
                 </p>
                 <a class="knap" href="/Programmering/html/om-maria.html">Lær kunstneren bedre at kende </a>
+            </div>
             </section>
         </main>
 
