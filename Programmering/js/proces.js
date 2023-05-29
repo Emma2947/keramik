@@ -2,7 +2,6 @@
 
 function myFunction() {
     var x = document.getElementById("menu");
-    var y = document.getElementById("topnav");
     if (x.style.display === "block") {
      x.style.display = "none";
      } else {

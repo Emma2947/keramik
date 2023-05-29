@@ -1,3 +1,5 @@
+/* Standard indstillinger på mobilstørrelsen */
+
 body {
     font-family: "baskerville-urw", serif;
     font-weight: 400;
@@ -17,7 +19,7 @@ body {
     }
 
     
-    /*Styling af Navigationen og burgermenuen*/
+    /*Styling af Navigationen og burgermenuen på mobilversionen*/
     
     .topnav {
         overflow: hidden;
@@ -74,7 +76,7 @@ body {
 
 
 
-     /* Footer */
+     /* Footer på mobilversionen */
 
      footer {
         background-color: #e9d9c3;
@@ -160,18 +162,23 @@ body {
       }
 
  /*-----------------------------------------------------------------------------*/
- /*BREAKPOINT 1*/
+ /* BREAKPOINT 1 */
  @media screen and (max-width: 768px) and (min-width: 481px) {
      .mobile-container {
        max-width: 768px;
       }
  }
 
+ /* --------------------------------------------------------------------------- */
+ /* BREAKPOINT 2 */
+
 @media screen and (max-width: 1025px) and (min-width: 769px) {
     .mobile-container {
         min-width: 769px;
         max-width: 1025px;
     }
+
+    /* Footerens opstilling ændres */
 
     .footer {
         display: flex;
@@ -199,10 +206,15 @@ body {
     
 }
 
+/* ------------------------------------------------- */
+/* BREAKPOINT - gælder for 1025px og op */
+
  @media screen and (min-width: 1025px) {
     .mobile-container {
         min-width: 1025px;
     }
+
+    /* Menupunkterne bliver vist frem */
 
     .topindhold {
       overflow: hidden;

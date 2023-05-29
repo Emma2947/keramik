@@ -10,12 +10,12 @@ h1 {
     padding-top: 40px;
 }
 
-/* udvalg */
+/* udvalg - billedecollage laves med grid */
 
 .udvalg {
     display: grid;
     grid-template-columns: 33% 66% ;
-    grid-template-rows: auto 167,155px 167,155px 167,155px;
+    grid-template-rows: 250px 167,155px 167,155px 167,155px;
     column-gap: 4%;
     row-gap: 2%;
     margin-left: 6%;
@@ -83,7 +83,7 @@ h1 {
     width: 85%;
 } 
 
-/* Farvepalette */
+/* Farvepalette - laves med grid */
 
 .farvepalette {
     display: grid;
@@ -329,7 +329,7 @@ h1 {
 
 
   
-
+/* --------------------------------- */
   /* breakpoint 649 */
   @media screen and (max-width: 649px) and (min-width: 481px) {
 
@@ -349,7 +349,7 @@ h1 {
     }
 }
 
-
+/* --------------------------------- */
   /* breakpoint 768 */
   @media screen and (max-width: 768px) and (min-width: 649px) {
 
@@ -370,7 +370,7 @@ h1 {
 
   }
 
-
+/* ----------------------------------- */
 /* breakpoint 768 */
 @media screen and (max-width: 2300px) and (min-width: 769px) {
     .mobile-container {
@@ -381,6 +381,8 @@ h1 {
     h1 {
         font-size: 3rem;
     }
+
+    /* Opstilling med grids ændres til desktop */
 
     .udvalg {
         display: grid;
@@ -633,6 +635,7 @@ h1 {
 
 }
 
+/* ---------------------------- */
 /* breakpoint 1200 */
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
     .mobile-container {
@@ -650,7 +653,8 @@ h1 {
 
 }
 
-/*2300*/
+/* ------------------------------------ */
+/* breakpoint min-width: 1201px */
 @media screen and (min-width: 1201px) {
     .mobile-container {
         min-width: 1201px;

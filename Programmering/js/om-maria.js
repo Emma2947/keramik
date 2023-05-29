@@ -2,7 +2,6 @@
 
 function myFunction() {
     var x = document.getElementById("menu");
-    var y = document.getElementById("topnav");
     if (x.style.display === "block") {
      x.style.display = "none";
      } else {
@@ -22,7 +21,9 @@ function myFunction() {
 })(document);
 
 
-//Keramik rejse 
+//Keramik rejse  
+
+// Dette fungerer ved at teksten er usynlig, men hvis man trykker på billederne så bliver teksten vist. Det sker hver gang siden loades.
 document.addEventListener("DOMContentLoaded", function() {
 
 var knap = document.getElementById('knap');
@@ -99,18 +100,6 @@ knap5.addEventListener('click', function() {
 
 });
 
-
-
-var map;
-function initMap() {
-  var mapOptions = {
-    center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
-    zoom: YOUR_ZOOM_LEVEL,
-    styles: YOUR_STYLE_OBJECT
-  };
-  
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
-}
 
   
 

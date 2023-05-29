@@ -1,8 +1,6 @@
 //Javascript til Burgermenuen
-
     function myFunction() {
     var x = document.getElementById("menu");
-    var y = document.getElementById("topnav");
     var navigation = document.getElementById('topnav');
     if (x.style.display === "block") {
      x.style.display = "none";
@@ -14,7 +12,6 @@
 
 
 //Skrifttype
-
   (function(d) {
     var config = {
       kitId: 'uex2dst',
@@ -26,10 +23,10 @@
 
  // navigation
 
+ //Når man begynder at scrolle ned over siden, så kommer der farve bag på navigationen, ved at der er angivet en højde, som bestemmer om der er backgroundcolor eller ej.
  window.addEventListener('scroll', function() {
   var navigation = document.getElementById('topnav');
-  var hero = document.getElementById('mit-keramik');
-  var threshold = 60; // Juster tærskelværdien efter dit behov
+  var threshold = 60;
 
   if (window.pageYOffset > threshold) {
     navigation.style.backgroundColor = '#f9f3ef';
@@ -44,18 +41,18 @@
 
 
 
-//Mapbox
+//Mapbox - der er fulgt denne videoguide: https://docs.mapbox.com/help/tutorials/custom-markers-gl-js-video/
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiZW1tYTI5NDciLCJhIjoiY2xocTY2cndxMDE1cjNmbzh5dmducjdyciJ9.qTGQsI4BH-7Q2AQ1uFuFnA';
+mapboxgl.accessToken = 'pk.eyJ1IjoiZW1tYTI5NDciLCJhIjoiY2xocTY2cndxMDE1cjNmbzh5dmducjdyciJ9.qTGQsI4BH-7Q2AQ1uFuFnA'; //API fra Mapbox tilføjes
 
-const map = new mapboxgl.Map({
+const map = new mapboxgl.Map({ //Kortet bliver hentet, med styling fra mapboxs hjemmeside
   container: 'map',
   style: 'mapbox://styles/mapbox/light-v11',
-  center: [10.2, 56.1482],
+  center: [10.2, 56.1482], // koordinater og zoom ændres, for at den automatisk viser Aarhus
   zoom: 17
 });
 
-const geojson = {
+const geojson = { // Her bliver der lagret koordinater og informationer om Nr4 i json
   type: 'FeatureCollection',
   features: [
     {
@@ -72,17 +69,17 @@ const geojson = {
   ]
 };
 
-// add markers to map
+// indsætter markør over placeringen
 for (const feature of geojson.features) {
-  // create a HTML element for each feature
+  // Der tilføjes et html element med markøren
   const el = document.createElement('div');
   el.className = 'marker';
 
-  // make a marker for each feature and add to the map
+  // Her laves markøren og den popup som vises, hvis man trykker på markøren
   new mapboxgl.Marker(el)
   .setLngLat(feature.geometry.coordinates)
   .setPopup(
-    new mapboxgl.Popup({ offset: 25 }) // add popups
+    new mapboxgl.Popup({ offset: 25 }) // popuppen tilføjes
       .setHTML(
         `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
       )

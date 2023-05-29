@@ -22,7 +22,7 @@
     <div class="mobile-container">
 
         <!--Menu bar-->
-        <nav id="topnav" class="topnav">
+        <nav class="topnav">
             <div class="topindhold">
                 <a href="/programmering/index.html"><img src="/Programmering/img/Kildahls-keramik-logo.svg" alt="Kildahls Keramik Logo" class="logo"></a>
                 <ul id="menu">
@@ -43,7 +43,7 @@
     
         <!--Indhold-->
         <main>
-
+            <!-- Kontakt -->
             <section class="kontakt">
                 <h1 class="kontakt-overskrift">Kontakt</h1>
                 <p class="kontakt-tekst">
@@ -51,7 +51,7 @@
                     så tøv ikke med at skriv til mig i kontaktformularen. 
                     Jeg er altid behjælpelig og svarer så hurtigt jeg kan.
                 </p>
-                        
+                      <!-- Kontaktformular -->  
                         <form onsubmit="visBesked()">
                             <div class="flex">
                             <div class="form1">
@@ -63,7 +63,7 @@
                           </div></div>
                             <input type="submit" value="Send" class="label-send">
                           </form>
-
+                          <!-- Confirmation besked -->
                           <div id="confirmation-message">
                             <span id="close" onclick="closePopup()">&times;</span>
                             <p id="tekst-message"> 
@@ -78,7 +78,7 @@
 
 
 
-
+            <!-- Markedskalender -->
             <section class="markedskalender">
 
                 <h2 class="markedsoverskrift">Markedskalender</h2>
@@ -91,7 +91,7 @@
                 </p>
             
                 <h4 class="maned">Juni 2023</h4>
-
+                <!-- Popup med informationer -->
                 <div class="kalender">
                     <img src="/Programmering/img/markedskalender.svg" alt="Markedskalender for juni" class="juni">
                     <a href="#kalender" onclick="showEvent1()" class="lordag"></a>
@@ -125,13 +125,13 @@
             </section>
 
 
-
+            <!-- Besøg Nr4 -->
             <section class="nr4">
-                
+                <!-- Mapbox -->
                 <div id="map-section">
                     <div id='map'></div>
                     </div>
-
+                    <!-- Tekst til Nr4 -->
                   <div class="section-wrapper">
                 <h2 class="nr4-overskrift">Besøg Nr4 i Aarhus</h2>
                 <p class="nr4-tekst">
@@ -157,6 +157,7 @@
             </section>
         </main>
 
+        <!-- Footer med indhold -->
         <footer>
             <div class="footer">
 
@@ -185,7 +186,7 @@
             <div class="logo-sec">
             <a href="/Programmering/index.html"><img src="/programmering/img/Kildahls-keramik-logo.svg" alt="Kildahls Keramik" class="logo-footer"></a>
             </div></div>
-            <p class="copy">Kildahls Keramik &copy 2023</p>
+            <p class="copy">Kildahls Keramik &#169; 2023</p>
     
         </footer>
 

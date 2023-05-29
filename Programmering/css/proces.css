@@ -105,7 +105,7 @@
  .mit-varksted {
  display: grid;
  grid-template-columns: 33% 66% ;
- grid-template-rows: auto 167,155px 167,155px 167,155px;
+ grid-template-rows: 250px 167,155px 167,155px 167,155px;
  column-gap: 4%;
  row-gap: 2%;
  margin-left: 6%;

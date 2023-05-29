@@ -31,7 +31,7 @@ video {
 }
 
 
-/* Citat */
+/* Citat med parallax effekt*/
 .citat { 
   background-image: url("/Programmering/img/citat.svg");
   min-height: 300px; 
@@ -75,7 +75,7 @@ h6 {
   background-size: contain;
  }
 
- /* Rejse */
+ /* Rejse - her vises teksten vha js */
 .rejse1 {
   display: flex;
   margin-bottom: 50px;
@@ -219,7 +219,8 @@ h6 {
   font-size: 1.5rem;
  }
 
-    /* breakpoint 768 */
+ /* ------------------------------- */
+    /* breakpoint 1 */
     @media screen and (max-width: 768px) and (min-width: 481px) {
 
       .mobile-container {
@@ -294,13 +295,15 @@ h6 {
 
     }
 
-    /* breakpoint 2300 */
+/* ------------------------------ */
+    /* breakpoint 2 */
 @media screen and (max-width: 2300px) and (min-width: 769px) {
   .mobile-container {
       min-width: 769px;
       max-width: 2300px;
   }
 
+  /* Opstilling ændres */
   .om-maria {
     display: flex;
     flex-direction: row-reverse;
@@ -363,7 +366,7 @@ h6 {
   row-gap: 5%;
  }
 
- /* Rejse */
+ /* Rejse - opstilling ændres */
 .rejse1 {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -430,6 +433,9 @@ h6 {
 
 
 }
+
+/* ------------------------------- */
+/* Breakpoint 3 */
 
 @media screen and (max-width: 1200px) and (min-width: 769px){
   .mobile-container {

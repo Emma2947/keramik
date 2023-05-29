@@ -1,11 +1,11 @@
-
 /*styling af indhold*/
+
+/* Kontakt sektionen styles */
 .kontakt { 
   text-align: center;
   margin-top: 95px;
   padding-top: 1px;
 }
-
 .kontakt-overskrift { 
 text-align: center;
 font-size: 2.2rem;
@@ -23,8 +23,8 @@ border-radius: 10%;
 background-image: url(/Programmering/img/baggrund-illustration.svg);
 background-size: cover
 }
-/*styling af kontakt formular*/
 
+/*styling af kontakt formular*/
 form { 
 text-decoration: none;
 color:#7f5849;
@@ -118,7 +118,7 @@ textarea:focus {
   font-size: 1.8rem
 }
 
-/*Styling af pop-up confirmation*/
+/*Styling af pop-up confirmation besked*/
 #confirmation-message {
 display: none;
 position: absolute;
@@ -142,8 +142,6 @@ font-family: "kozuka-gothic-pro", sans-serif;
 
 
 /*Styling af markedskalender*/
-
-
 .markedskalender{
 background-color: #f8c576;
 text-align: center;
@@ -159,6 +157,8 @@ width: 103%;
 .maned {
   font-size: 1rem;
 }
+
+/* Styling af popups til markedskalender */
 
 .kalender a.lordag{
   position: relative;
@@ -220,7 +220,9 @@ cursor: pointer;
 cursor: pointer;
 }
 
-  /* kontakt */
+  /* Styling af besøg Nr4 */
+
+  /* Mapbox styling fra videoguide  https://docs.mapbox.com/help/tutorials/custom-markers-gl-js-video/ */
   #map-section {
     position: relative;
     height: 300px; /* Just an example height, adjust as needed */
@@ -268,8 +270,6 @@ font-size: 1.7rem;
 margin: 0% 10% 4% 10%;
 }
 
-/*Styling af knap retur lÃ¦r kunsten..*/
-
 .knap {
 text-decoration: none;
 color: #ef7b32;
@@ -285,8 +285,8 @@ font-size: 1.6rem;
 
 
 
-/*----------------------BREAKPOINTS-----------*/
-/*breakpoint 1 */
+/*---------------------------------*/
+/* breakpoint 1 */
 @media screen and (min-width: 481px) {
   .mobile-container {
     min-width: 481px;
@@ -342,7 +342,8 @@ font-size: 1.6rem;
 
 }
 
-
+/* --------------------------------------------- */
+/* Breakpoint 2 */
 
 @media screen and (min-width: 769px) {
   .mobile-container {
@@ -448,6 +449,9 @@ textarea {
 
 }
 
+/* -------------------------------------------- */
+/* Breakpoint 3 */
+
 @media screen and (min-width: 1025px) {
   .mobile-container {
     min-width: 1025px;
@@ -456,6 +460,8 @@ textarea {
   .kontakt-overskrift {
     font-size: 3.5rem;
   }
+
+  /* Kontaktformularens opstilling ændres */
 
   .flex {
     display: flex;
@@ -475,6 +481,8 @@ textarea {
     padding-bottom: 21%;
     padding-right: 20%;
   }
+
+  /* Nr4 afsnittet ændre opstilling */
 
   .nr4 {
     display: grid;
@@ -508,6 +516,8 @@ textarea {
 
 }
 
+/* ---------------------------------------- */
+/* Breakpoint 4 */
 
 @media screen and (min-width: 1200px) {
   .mobile-container {
