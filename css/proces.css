@@ -15,7 +15,169 @@
  }
 
  /*Styling af grid + baggrundsbillede*/
+
+ .proces {
+  background-image: url("/img/processtreg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position-y: 130px;
+ }
+ 
  .rejsen {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15%;
+  column-gap: 7%;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 8%;
+ }
+
+ .tekst1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+ }
+
+ .img1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+ }
+
+ .tekst2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ }
+
+ .img2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ }
+
+ .tekst3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+ }
+
+ .img3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+ }
+
+ .proces-video1 {
+  width: 220px;
+  border-radius: 100%;
+  margin-left: -6%;
+ }
+
+
+ .tekst4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+ }
+
+ .img4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+ }
+
+ .tekst5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 6;
+ }
+
+ .img5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+ }
+
+ .tekst6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+ }
+
+ .img6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  width: 218px;
+  border-radius: 100%;
+ }
+
+ .proces-video2 {
+  width: 290px;
+  border-radius: 100%;
+  margin-left: -12%;
+ }
+
+
+ .tekst7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 8;
+ }
+
+ .img7 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+ }
+
+ .tekst8 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+ }
+
+ .img8 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  justify-content: center;
+  width: 200px;
+  border-radius: 100%;
+ }
+
+
+ .proces-img {
+  height: 100px;
+  width: 100px;
+  }
+
+.proces-tekst {
+  background-color: #f9f3ef;
+}
+
+
+
+ /*.rejsen {
  display: grid;
  grid-template-columns: 1fr 1fr;
  align-items: center;
@@ -30,7 +192,7 @@
  }
 
  /*Styling af tekst + illustrationer*/
- .proces-img-vis-venstre {
+ /*.proces-img-vis-venstre {
  display: none;
  }
 
@@ -88,7 +250,7 @@
  }
 
  /*(Styling af nederste kop + tekst)*/
- .proces-tekst-midten {
+ /*.proces-tekst-midten {
  text-align: center; 
  margin-left: 10%;
  margin-right: 10%;
