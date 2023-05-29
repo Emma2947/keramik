@@ -26,50 +26,51 @@
  
  .rejsen {
   display: grid;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15%;
-  column-gap: 7%;
-  margin-left: 10%;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 11% 13% 11% 13% 11% 14% 16% 15%;
+  column-gap: 23%;
+  margin-left: 7%;
   margin-right: 5%;
   margin-top: 8%;
+  margin-bottom: 40%;
  }
 
- .tekst1 {
+ #tekst1 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
  }
 
- .img1 {
+ #img1 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
  }
 
- .tekst2 {
+ #tekst2 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
  }
 
- .img2 {
+ #img2 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
  }
 
- .tekst3 {
+ #tekst3 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
  }
 
- .img3 {
+ #img3 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -77,186 +78,99 @@
  }
 
  .proces-video1 {
-  width: 220px;
+  width: 140%;
   border-radius: 100%;
-  margin-left: -6%;
+  margin-left: -45%;
+  margin-top: -10%;
  }
 
 
- .tekst4 {
+ #tekst4 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
  }
 
- .img4 {
+ #img4 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
+  width: 130px;
  }
 
- .tekst5 {
+
+ #tekst5 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
  }
 
- .img5 {
+ #img5 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
+  width: 130px;
  }
 
- .tekst6 {
+ #tekst6 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
  }
 
- .img6 {
+ #img6 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 6;
   grid-row-end: 7;
-  width: 218px;
-  border-radius: 100%;
  }
 
  .proces-video2 {
-  width: 290px;
+  width: 150%;
   border-radius: 100%;
   margin-left: -12%;
  }
 
 
- .tekst7 {
+ #tekst7 {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 7;
   grid-row-end: 8;
  }
 
- .img7 {
+ #img7 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 7;
   grid-row-end: 8;
+  width: 130px;
  }
 
- .tekst8 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 9;
-  grid-row-end: 10;
- }
 
- .img8 {
+ #img8 {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 8;
   grid-row-end: 9;
-  justify-content: center;
-  width: 200px;
+  margin: auto;
+  width: 80%;
   border-radius: 100%;
  }
 
-
- .proces-img {
-  height: 100px;
-  width: 100px;
-  }
-
-.proces-tekst {
-  background-color: #f9f3ef;
+#tekst8 {
+  text-align: center;
+  margin-right: -147%;
 }
 
-
-
- /*.rejsen {
- display: grid;
- grid-template-columns: 1fr 1fr;
- align-items: center;
- grid-template-rows: auto auto;
- gap: 15px;
- background-image: url("/img/processtreg.png");
- background-repeat: no-repeat;
- background-position: center;
- background-size: contain;
- margin-left: 5%;
- margin-right: 5%;
- }
-
- /*Styling af tekst + illustrationer*/
- /*.proces-img-vis-venstre {
- display: none;
- }
-
- .proces-img-vis-hojre {
- display: none;
- }
-
- .proces-video-vis-venstre {
- display: none;
- border-radius: 100%; 
- }
-
- .proces-video-vis-hojre {
- display: none;
- border-radius: 100%; 
- }
-
- #proces-video2-vis {
- display: none;
- }
-
- .proces-img {
- height: 120px;
- width: 120px;
- }
-
- .proces-video {
- width: 100%; 
- border-radius: 100%; 
- }
-
- #proces-video2 {
- width: 350px;  
- }
-
- .proces-tekst-venstre {
- text-align:center;
- background-color: #f9f3ef;
- border-radius: 20px;
- }
-
- .proces-tekst-hojre {
- text-align: center;
- padding-right: 50px;
- background-color: #f9f3ef;
- border-radius: 20px;
- }
-
- .div-img {
- text-align: center;
- }
-
- .img-tekst {
- text-align: center;
- }
-
- /*(Styling af nederste kop + tekst)*/
- /*.proces-tekst-midten {
- text-align: center; 
- margin-left: 10%;
- margin-right: 10%;
- }
-
-
+.rejsen p {
+  background-color: #f9f3ef;
+}
 
  /*Styling af billede gallari*/
  h2 {
@@ -355,13 +269,48 @@
 
  /*-----------------------------------------------------------------------------*/
  /*BREAKPOINT 1*/
- @media screen and (max-width: 768px) and (min-width: 481px)
+ @media screen and (min-width: 481px)
  
  {
 
  .mobile-container {
- max-width: 768px;
+ min-width: 481px;
  }
+
+ .proces-tekst {
+  margin: 20px 35px;
+ }
+
+ .proces-img {
+  margin-left: 20px;
+ }
+
+ .rejsen {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  column-gap: 26%;
+  margin-bottom: 30%;
+ }
+
+ .proces-video1 {
+  width: 100%;
+  margin-left: -25%;
+ }
+
+ .proces-video2 {
+  width: 100%;
+  margin-left: -2%;
+ }
+
+ #img8 {
+  width: 60%;
+ }
+
+ #tekst8 {
+  margin-right: -143%;
+  margin-top: 30%;
+}
 
  }
 
@@ -418,6 +367,8 @@
  margin-left: 30%;
  margin-right: 30%;
  }
+
+ 
 
  }
 

@@ -24,7 +24,21 @@ function myFunction() {
 
  //Autoplay af videoer
  document.addEventListener('DOMContentLoaded', function() {
-  var videos = document.getElementsByClassName('proces-video');
+  var videos = document.getElementsByClassName('proces-video1');
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].play();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var videos = document.getElementsByClassName('proces-video2');
+  for (var i = 0; i < videos.length; i++) {
+    videos[i].play();
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var videos = document.getElementsByClassName('proces-video3');
   for (var i = 0; i < videos.length; i++) {
     videos[i].play();
   }
