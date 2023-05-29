@@ -318,12 +318,12 @@
 
  /*-----------------------------------------------------------------------------*/
  /*BREAKPOINT 2*/
- @media screen and (max-width: 1025px) and (min-width: 769px)
+ @media screen and (min-width: 769px)
 
 {
 
  .mobile-container {
- max-width: 1025px;
+ min-width: 769px;
  }   
 
  /*Styling af overskrifter og brødtekst*/ 
@@ -339,34 +339,28 @@
  font-size: 2.6rem;
  } 
 
+ p {
+  font-size: 1.2rem;
+ }
+
  /*Styling af Illustrationer, Motion Graphics + sektioner med tekst*/
- .proces-video {
- width: 270px;  
+
+ .proces {
+  background-position-y: 180px;
  }
 
- #proces-video2 {
- width: 400px;
- }
+ .rejsen {
+  grid-template-columns: 35% 35%;
+  grid-template-rows: 11% 13% 11% 13% 11% 14% 16% 15%;
+  column-gap: 30%;
+  margin-left: 7%;
+  margin-right: 5%;
+}
 
- .proces-img {
- height: 140px;
- width: 140px;
- }
-
- .proces-tekst-venstre {
- margin-left: 20%;
- margin-right: 20%;
- }
-
- .proces-tekst-hojre {
- margin-left: 10%;
- margin-right: 10%;
- }
-
- .proces-tekst-midten {
- margin-left: 30%;
- margin-right: 30%;
- }
+#tekst8 {
+  margin-right: -173%;
+  margin-top: 40%;
+}
 
  
 
@@ -399,7 +393,7 @@
  }
 
  .proces p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
  }
 
 
@@ -412,74 +406,126 @@
 
  /* styling af billeder og tekst i grid*/
 
- .proces-img {
- display: none;
+ 
+ .proces {
+  background-position-y: 220px;
+ }
+ 
+ .rejsen {
+  grid-template-columns: 22.5% 22.5% 10% 22.5% 22.5%;
+  grid-template-rows: 10% 12% 13% 13% 11% 13% 13% 5%;
+  column-gap: 0;
+  margin-left: 5%;
+  margin-top: 7%;
+  margin-bottom: 20%;
  }
 
- .proces-video {
- display: none;
+ .rejsen img {
+  width: 180px;
+  height: 180px;
  }
 
- .proces-img-vis-venstre {
- display: flex;
- width: 120px;
- height: 120px;
+ #tekst1 {
+  grid-column-start: 4;
+  grid-column-end: 5;
  }
 
- .tekst-img {
- display: flex;
- justify-content: flex-start;
- align-items: center;
- max-width: 70%;
+ #img1 {
+  grid-column-start: 5;
+  grid-column-end: 6;
  }
 
- .proces-tekst-venstre {
- text-align: left;
- margin-right: 10px;
+ #tekst2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
  }
 
- .proces-img-vis-hojre {
- display: flex;
- width: 120px;
- height: 120px;
+ #img2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
  }
 
- .div-tekst {
- display: flex;
- justify-content: flex-end;
- align-items: center;
- max-width: 70%;
- margin-left: 20%;
+ #tekst3 {
+  grid-column-start: 4;
+  grid-column-end: 5;
  }
 
- .proces-tekst-hojre {
- text-align: left;
- margin-left: 10px;
- padding-right: 0;
+ #img3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
  }
 
- .proces-video-vis-venstre {
- display: flex;
- width: 60%;
+ .proces-video1 {
+  width: 140%;
+  margin-left: -15%;
  }
 
- .proces-video-vis-hojre {
- display: flex;
- width: 60%;
+
+ #tekst4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
  }
 
- #proces-video2 {
- display: flex;
- margin-top: 50px;
- margin-right: auto;
- margin-left: auto;
- width: 50%;
+ #img4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 180px;
  }
 
- .proces-tekst-midten{
- margin-left: 30%;
- margin-right: 30%;
+
+ #tekst5 {
+  grid-column-start: 4;
+  grid-column-end: 5;
  }
+
+ #img5 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  width: 180px;
+ }
+
+ #tekst6 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+ }
+
+ #img6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+ }
+
+ .proces-video2 {
+  width: 150%;
+  margin-left: -22%;
+ }
+
+
+ #tekst7 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+ }
+
+ #img7 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  width: 180px;
+ }
+
+
+ #img8 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  width: 90%;
+ }
+
+#tekst8 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  margin-right: 0;
+}
+
 
  .mit-varksted {
   display: grid;
